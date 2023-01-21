@@ -1,0 +1,81 @@
+<style lang="scss">
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 170px;
+}
+.red-cog {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.black-cog {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.logo-accent {
+  color: $negative;
+}
+.rotating-image-clockwise {
+  animation: cloclwise 10s linear infinite;
+}
+
+@keyframes cloclwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating-image-counterClockwise {
+  animation: counterCloclwise 10s linear infinite;
+}
+
+@keyframes counterCloclwise {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+</style>
+
+<template>
+  <q-page class="flex flex-center">
+    <div class="brand-container">
+      <div class="image-container q-mx-auto">
+        <img
+          alt="JCMITCONSULTING logo"
+          src="~assets/gear-red.svg"
+          class="red-cog rotating-image-clockwise"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          alt="JCMITCONSULTING logo"
+          src="~assets/gear-black.svg"
+          class="black-cog rotating-image-counterClockwise"
+          style="width: 120px; height: 120px"
+        />
+      </div>
+      <h3 class="q-mt-md q-mb-none text-weight-medium">
+        JCM<span class="logo-accent">IT</span>CONSULTING
+      </h3>
+      <div class="text-subtitle1" style="text-align: right">
+        automate your business
+      </div>
+    </div>
+  </q-page>
+</template>
+
+<script>
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "IndexPage",
+});
+</script>
