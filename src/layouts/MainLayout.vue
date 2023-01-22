@@ -1,18 +1,25 @@
+<style lang="scss">
+.navlinks:hover {
+  color: $accent;
+  background-color: $primary;
+}
+</style>
+
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header bordered class="bg-primary text-black">
-      <q-toolbar class="">
-        <q-toolbar-title>
+      <q-toolbar class="q-pa-none q-pl-md q-pr-lg">
+        <!-- <q-toolbar-title>
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
-        </q-toolbar-title>
+        </q-toolbar-title> -->
         <q-space />
-        <q-btn stretch flat label="Home" />
+        <q-btn stretch flat class="q-pa-lg text-h6 navlinks" label="Home" />
         <q-separator dark vertical />
-        <q-btn stretch flat label="About" />
+        <q-btn stretch flat class="q-pa-lg text-h6" label="About" />
         <q-separator dark vertical />
-        <q-btn stretch flat label="Contact" />
+        <q-btn stretch flat class="q-pa-lg text-h6" label="Contact" />
       </q-toolbar>
     </q-header>
 
