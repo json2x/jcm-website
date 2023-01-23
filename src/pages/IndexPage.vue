@@ -28,7 +28,7 @@
 .light-gradient {
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.9),
-    rgba(18, 18, 18, 0.3)
+    rgba(0, 0, 0, 0.2)
   );
 }
 
@@ -72,7 +72,7 @@
             style="width: 120px; height: 120px"
           />
         </div>
-        <h3 class="q-mt-md q-mb-none ext-weight-medium">
+        <h3 class="q-mt-md q-mb-none text-weight-medium">
           JCM<span class="logo-accent">IT</span>CONSULTING
         </h3>
         <div class="text-subtitle1" style="text-align: right">

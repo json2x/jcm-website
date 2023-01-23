@@ -27,7 +27,7 @@
 }
 .dark-gradient {
   background-image: linear-gradient(
-    rgba(18, 18, 18, 0.9),
+    rgba(0, 0, 0, 0.9),
     rgba(255, 255, 255, 0.1)
   );
 }
