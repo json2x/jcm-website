@@ -7,7 +7,7 @@
 
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header class="bg-primary text-black">
+    <q-header>
       <q-toolbar class="q-pa-none q-px-xl bg-black text-white">
         <q-space />
         <q-btn stretch flat class="q-pa-lg" label="Home" />

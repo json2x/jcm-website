@@ -7,14 +7,15 @@
 
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header class="bg-primary text-black">
-      <q-toolbar class="q-pa-none q-px-xl">
+    <q-header>
+      <!-- <q-toolbar class="q-pa-none q-px-xl">
         <q-space />
-        <q-btn stretch flat class="q-pa-lg" label="Home" />
-        <q-btn stretch flat class="q-pa-lg" label="About" />
-        <q-btn stretch flat class="q-pa-lg" label="Contact" />
+        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="Home" />
+        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="About" />
+        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="Contact" />
         <q-space />
-      </q-toolbar>
+      </q-toolbar> -->
+      <j-toolbar :links="pages" mode="dark"></j-toolbar>
     </q-header>
 
     <q-page-container>
@@ -25,7 +26,10 @@
 
 <script setup>
 import { ref } from "vue";
+import { useMyStore } from "../stores/myStore";
 
+const store = useMyStore();
 const pages = ref(["Home", "About", "Contact"]);
 const currentPage = ref(null);
+console.log(store);
 </script>
