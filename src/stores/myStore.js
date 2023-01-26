@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 export const useMyStore = defineStore("myStore", {
   state: () => ({
     darkMode: false,
+    counter: 0,
   }),
 
   getters: {},
