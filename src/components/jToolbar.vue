@@ -1,14 +1,9 @@
 <style lang="scss">
-div.links {
-  margin: 0;
-  padding: 0;
-}
-
-h5.link {
+div.link {
   display: inline;
 }
 
-h5.link:hover {
+div.link:hover {
   color: $accent;
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
@@ -18,13 +13,18 @@ h5.link:hover {
 
 <template>
   <q-toolbar :class="toolbarClass">
-    <q-space />
-    <div class="q-mr-md">
-      <div class="links">
-        <h5 v-for="link in links" :key="link" class="q-mx-md link">
-          {{ link }}
-        </h5>
+    <q-space class="gt-sm" />
+    <div class="q-mr-md gt-sm">
+      <div
+        v-for="link in links"
+        :key="link"
+        class="col-auto q-mx-md text-h5 link"
+      >
+        {{ link }}
       </div>
+    </div>
+    <div class="q-mr-dm lt-md">
+      <q-btn flat round color="primary" text-color="accent" icon="menu" />
     </div>
   </q-toolbar>
 </template>
@@ -41,7 +41,7 @@ const props = defineProps({
 });
 
 const toolbarClass = computed(() => {
-  let className = "q-pa-md";
+  let className = "q-pa-md justify-end";
   if (props.mode == "light") {
     className = className.concat(" ", "bg-white text-black");
   }

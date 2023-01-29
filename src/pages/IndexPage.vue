@@ -55,32 +55,33 @@
 </style>
 
 <template>
-  <div class="">
-    <q-page class="flex flex-center light-gradient">
-      <div class="brand-container">
-        <div class="image-container q-mx-auto">
-          <img
-            alt="JCMITCONSULTING logo"
-            src="~assets/gear-red.svg"
-            class="red-cog rotating-image-clockwise"
-            style="width: 100px; height: 100px"
-          />
-          <img
-            alt="JCMITCONSULTING logo"
-            src="~assets/gear-black.svg"
-            class="black-cog rotating-image-counterClockwise"
-            style="width: 120px; height: 120px"
-          />
-        </div>
-        <h3 class="q-mt-md q-mb-none text-weight-medium">
-          JCM<span class="logo-accent">IT</span>CONSULTING
-        </h3>
-        <div class="text-subtitle1" style="text-align: right">
-          automate your business
-        </div>
+  <q-page class="flex flex-center light-gradient">
+    <div class="brand-container">
+      <div class="image-container q-mx-auto">
+        <img
+          alt="JCMITCONSULTING logo"
+          src="~assets/gear-red.svg"
+          class="red-cog rotating-image-clockwise"
+          style="width: 100px; height: 100px"
+        />
+        <img
+          alt="JCMITCONSULTING logo"
+          src="~assets/gear-black.svg"
+          class="black-cog rotating-image-counterClockwise"
+          style="width: 120px; height: 120px"
+        />
       </div>
-    </q-page>
-  </div>
+      <h3 class="gt-sm q-mt-md q-mb-none text-weight-medium">
+        JCM<span class="logo-accent">IT</span>CONSULTING
+      </h3>
+      <h4 class="lt-md q-mt-md q-mb-none text-weight-medium">
+        JCM<span class="logo-accent">IT</span>CONSULTING
+      </h4>
+      <div class="text-subtitle1" style="text-align: right">
+        automate your business
+      </div>
+    </div>
+  </q-page>
 </template>
 
 <script>

@@ -1,0 +1,28 @@
+{
+  "name": "jcm-website",
+  "version": "0.0.2",
+  "description": "My personal website",
+  "author": "jcmitconsulting@gmail.com",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "pinia": "2.0.29",
+    "@quasar/extras": "1.15.10",
+    "quasar": "2.11.5",
+    "vue": "3.2.45",
+    "vue-router": "4.1.6",
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "serialize-javascript": "^6.0.0"
+  },
+  "engines": {
+    "node": "16.x.x",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "quasar": {
+    "ssr": true
+  }
+}

@@ -8,13 +8,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header>
-      <!-- <q-toolbar class="q-pa-none q-px-xl">
-        <q-space />
-        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="Home" />
-        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="About" />
-        <q-btn stretch flat class="q-pa-lg q-mx-lg" label="Contact" />
-        <q-space />
-      </q-toolbar> -->
       <j-toolbar :links="pages" :mode="mode"></j-toolbar>
     </q-header>
 
@@ -35,7 +28,7 @@ const { darkMode } = storeToRefs(store);
 const pages = ref(["Home", "About", "Contact"]);
 const currentPage = ref(null);
 
-darkMode.value = true;
+darkMode.value = false;
 
 const mode = computed(() => {
   if (store.darkMode) {
