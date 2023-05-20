@@ -481,15 +481,15 @@
   ],
   "src/stores/myStore.js": [
     "/assets/MainLayout.bc9d58db.js",
-    "/assets/MainLayoutDark.e533b1cc.css"
+    "/assets/MainLayout.49907383.css"
   ],
   "src/layouts/MainLayout.vue?vue&type=style&index=0&lang.scss": [
     "/assets/MainLayout.bc9d58db.js",
-    "/assets/MainLayoutDark.e533b1cc.css"
+    "/assets/MainLayout.49907383.css"
   ],
   "src/layouts/MainLayout.vue": [
     "/assets/MainLayout.bc9d58db.js",
-    "/assets/MainLayoutDark.e533b1cc.css"
+    "/assets/MainLayout.49907383.css"
   ],
   "node_modules/quasar/src/composables/private/use-can-render.js": [
     "/assets/QLayout.9f658e84.js"
@@ -537,11 +537,11 @@
   ],
   "src/layouts/MainLayoutDark.vue?vue&type=style&index=0&lang.scss": [
     "/assets/MainLayoutDark.96831229.js",
-    "/assets/MainLayoutDark.e533b1cc.css"
+    "/assets/MainLayout.49907383.css"
   ],
   "src/layouts/MainLayoutDark.vue": [
     "/assets/MainLayoutDark.96831229.js",
-    "/assets/MainLayoutDark.e533b1cc.css"
+    "/assets/MainLayout.49907383.css"
   ],
   "src/assets/gear-white.svg": [
     "/assets/IndexPageDark.0c65963e.js",
