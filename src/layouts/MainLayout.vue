@@ -25,7 +25,11 @@ import { useMyStore } from "../stores/myStore";
 const store = useMyStore();
 const { darkMode } = storeToRefs(store);
 
-const pages = ref(["Home", "About", "Contact"]);
+const pages = ref([
+  { label: "Home", href: "/" },
+  { label: "About Me", href: "/#/aboutme" },
+  { label: "Contact", href: "/#/contact" },
+]);
 const currentPage = ref(null);
 
 darkMode.value = false;

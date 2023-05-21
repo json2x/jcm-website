@@ -3,7 +3,12 @@ div.link {
   display: inline;
 }
 
-div.link:hover {
+div.link a {
+  text-decoration: none;
+  color: black;
+}
+
+div.link a:hover {
   color: $accent;
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
@@ -20,7 +25,9 @@ div.link:hover {
         :key="link"
         class="col-auto q-mx-md text-h5 link"
       >
-        {{ link }}
+        <a :href="link.href">
+          {{ link.label }}
+        </a>
       </div>
     </div>
     <div class="q-mr-dm lt-md">
