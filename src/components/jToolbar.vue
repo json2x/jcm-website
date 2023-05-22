@@ -31,13 +31,25 @@ div.link a:hover {
       </div>
     </div>
     <div class="q-mr-dm lt-md">
-      <q-btn flat round color="primary" text-color="accent" icon="menu" />
+      <q-btn
+        flat
+        round
+        color="primary"
+        text-color="accent"
+        icon="menu"
+        @click="rightDrawerOpen = !rightDrawerOpen"
+      />
     </div>
   </q-toolbar>
 </template>
 
 <script setup>
 import { computed } from "vue";
+import { storeToRefs } from "pinia";
+import { useMyStore } from "../stores/myStore";
+
+const store = useMyStore();
+const { rightDrawerOpen } = storeToRefs(store);
 
 const props = defineProps({
   links: {
